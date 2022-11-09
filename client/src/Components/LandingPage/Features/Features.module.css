@@ -1,0 +1,28 @@
+.features {
+    color: #383833;
+    font-size: 15px;
+}
+
+.features ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid rgba(56, 56, 51, 0.1);
+    padding: 5px 20px 5px 20px;
+}
+
+.features ul li:nth-of-type(odd) {
+    display: flex;
+    align-items: center;
+}
+
+.features ul li:nth-last-of-type(even) {
+    color: rgba(56, 56, 51, 0.2);
+    font-size: 45px;
+    font-weight: 100;
+}
+
+.features ul li:nth-last-of-type(odd) span {
+    padding-left: 8px;
+}

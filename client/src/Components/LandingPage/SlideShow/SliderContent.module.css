@@ -1,0 +1,84 @@
+.sliderContent .active {
+    display: inline-block;
+}
+
+.sliderContent .inactive {
+    display: none;
+} 
+
+.sliderContent .slides {
+    height: 70vh;
+    width: 100%;
+    position: relative;
+}
+
+.sliderContent .imageContainer {
+    background-color: #383838;
+    width: 100%;
+    height: 100%;
+}
+
+.sliderContent .imageContainer1 {
+    background-color: #383838;
+    width: 100%;
+    height: 100%;
+}
+
+.sliderContent .imageContainer .slideImage {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.9;
+}
+
+.sliderContent .imageContainer1 .slideImage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.sliderContent .slideTitle, .sliderContent .slideDesc, .sliderContent button {
+    /* width: 100%;
+    height: 100%; */
+    color: #383838;
+    font-size: 35px;
+    position: absolute;
+    text-align: center;
+    top: 32%;
+    z-index: 99;
+    background-color: transparent;
+    left: 18%;
+}
+
+.sliderContent .slideTitle1, .sliderContent .slideDesc1, .sliderContent .button {
+    color: rgb(241, 236, 236);
+}
+
+.sliderContent .slideDesc {
+    top: 42%;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.sliderContent button {
+    top: 55%;
+    font-size: 20px;
+    height: 50px;
+    width: 180px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid #383838;
+    font-weight: 600;
+    transition: all ease 0.1s;
+}
+
+.sliderContent button:hover {
+    background-color: #383838;
+    color: #fff;
+    border: 2px solid #383838;
+}
+
+.sliderContent .button {
+    border: 2px solid rgb(241, 236, 236);
+}

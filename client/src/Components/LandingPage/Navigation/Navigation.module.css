@@ -1,0 +1,102 @@
+.navigation .navigationTop {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 50px;
+  border: 1px solid rgb(201, 196, 196);
+}
+
+.navigation .navigationTop h1 {
+  font-family: "Splash", cursive;
+  font-size: 45px;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+  color: #a27b5c;
+}
+
+.navigation .navigationTop .container {
+  display: flex;
+  align-items: center;
+  width: 66%;
+  justify-content: space-between;
+}
+
+.navigation .navigationTop .container .searchForm {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #383838;
+  border-radius: 10px;
+  height: 40px;
+  padding: 0 20px 0 20px;
+}
+
+.navigation .navigationTop .container .searchForm input {
+  flex: 1;
+  outline: none;
+  border: none;
+  padding: 0 20px 0 0;
+}
+
+.navigation .navigationTop .container .searchForm input::placeholder {
+  font-size: 16px;
+}
+
+.navigation .navigationTop .container .searchForm button {
+  border: none;
+  cursor: pointer;
+}
+
+.navigation .navigationTop .container .icons {
+  width: 11%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation .navigationTop .container .iconsLoggedIn {
+  width: 18%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation .navigationTop .container .icons .login .loginButton {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navigation .navigationTop .container .iconsLoggedIn .login .loginButton {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navigation .navbar {
+  height: 45px;
+  border-bottom: 1px solid rgb(201, 196, 196);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation .navbar ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 55%;
+  font-size: 14px;
+  letter-spacing: 0.7px;
+  word-spacing: 1px;
+}
+
+.navigation .navbar ul li:nth-of-type(odd) {
+  cursor: pointer;
+}
+
+.navigation .navbar ul li:nth-of-type(even) {
+  color: rgb(201, 196, 196);
+}

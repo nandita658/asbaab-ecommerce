@@ -1,0 +1,17 @@
+.footer {
+    height: 100px;
+    margin-top: 50px;
+    background-color: #A27B5C;
+    color: aliceblue;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: end;
+    box-sizing: border-box;
+    padding: 15px;
+    position: inherit;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

@@ -1,0 +1,18 @@
+.arrow .arrowPrev, .arrow .arrowNext {
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    color: #B09B71;
+    background-color: transparent;
+}
+
+.arrow .arrowPrev {
+    left: 10px;
+}
+
+.arrow .arrowNext {
+    right: 10px;
+}
