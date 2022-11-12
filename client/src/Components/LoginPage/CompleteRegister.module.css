@@ -54,3 +54,8 @@
     box-sizing: border-box;
     font-weight: 500;
 }
+
+.footerRegister {
+    position: absolute;
+    bottom: 0;
+}

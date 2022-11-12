@@ -7,6 +7,7 @@ import CompleteRegister from "./Components/LoginPage/CompleteRegister";
 import { auth } from "./firebase";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
+import ForgotPassword from "./Components/LoginPage/ForgotPassword";
 
 function App() {
   const dispatch = useDispatch();
@@ -43,6 +44,11 @@ function App() {
           exact
           path="/register/complete-registration"
           element={<CompleteRegister />}
+        />
+        <Route
+          exact
+          path="/login/forgotPassword"
+          element={<ForgotPassword />}
         />
       </Routes>
     </BrowserRouter>

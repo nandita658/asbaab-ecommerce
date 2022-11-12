@@ -64,6 +64,9 @@
     border: none;
     color: #f7f7f7;
     transition: all ease 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .loginPage form .formActions button:first-of-type {
@@ -77,4 +80,9 @@
 .loginPage form .signup {
     font-size: 12px;
     margin-top: 10px;
+}
+
+.footerRegister {
+    position: absolute;
+    bottom: 0;
 }

@@ -7,6 +7,7 @@ import { auth, googleAuthProvider } from "../../firebase";
 import { useDispatch } from "react-redux";
 import { toast, ToastContainer } from "react-toastify";
 import GoogleIcon from "@mui/icons-material/Google";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
 
 const LoginPage = () => {
   const dispatch = useDispatch();
@@ -88,12 +89,41 @@ const LoginPage = () => {
               onChange={(e) => setPassword(e.target.value)}
             />
           </div>
-          <span style={{ fontSize: "12px", textAlign: "right" }}>
-            Forgot your password?
-          </span>
+          <Link
+            to="/login/forgotPassword"
+            style={{
+              fontSize: "12px",
+              textAlign: "right",
+              textDecoration: "none",
+              color: "#383838",
+              fontWeight: "500",
+            }}
+          >
+            <span>Forgot your password?</span>
+          </Link>
           <div className={classes.formActions}>
-            <button type="submit">Login</button>
-            <button onClick={googleLoginHandler}>Login with Google</button>
+            <button type="submit">
+              <MailOutlineIcon
+                style={{
+                  background: "transparent",
+                  paddingRight: "6px",
+                  color: "#f7f7f7",
+                  height: "20px",
+                }}
+              />
+              Login
+            </button>
+            <button onClick={googleLoginHandler}>
+              <GoogleIcon
+                style={{
+                  background: "transparent",
+                  paddingRight: "6px",
+                  color: "#f7f7f7",
+                  height: "20px",
+                }}
+              />
+              Login with Google
+            </button>
           </div>
           <div className={classes.signup}>
             Not registered yet?{" "}

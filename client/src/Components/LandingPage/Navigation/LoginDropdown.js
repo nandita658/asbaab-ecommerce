@@ -2,9 +2,9 @@ import React from "react";
 import classes from "./LoginDropdown.module.css";
 import LoginIcon from "@mui/icons-material/Login";
 import HowToRegOutlinedIcon from "@mui/icons-material/HowToRegOutlined";
-import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
-import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
-import ShoppingCartCheckoutOutlinedIcon from '@mui/icons-material/ShoppingCartCheckoutOutlined';
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
+import ShoppingCartCheckoutOutlinedIcon from "@mui/icons-material/ShoppingCartCheckoutOutlined";
 import LogoutIcon from "@mui/icons-material/Logout";
 import { Link, useNavigate } from "react-router-dom";
 import firebase from "firebase/compat/app";
@@ -48,19 +48,19 @@ const LoginDropdown = () => {
           )}
           {user && (
             <>
-              <li style={{ marginBottom: "6px" }} onClick={logout}>
+              <li style={{ marginBottom: "6px" }}>
                 <ShoppingCartOutlinedIcon
                   style={{ height: "18px", width: "18px", color: "#383838" }}
                 />{" "}
                 <span>Your Cart</span>
               </li>
-              <li style={{ marginBottom: "6px" }} onClick={logout}>
+              <li style={{ marginBottom: "6px" }}>
                 <FavoriteBorderOutlinedIcon
                   style={{ height: "18px", width: "18px", color: "#383838" }}
                 />{" "}
                 <span>Your Wishlist</span>
               </li>
-              <li style={{ marginBottom: "6px" }} onClick={logout}>
+              <li style={{ marginBottom: "6px" }}>
                 <ShoppingCartCheckoutOutlinedIcon
                   style={{ height: "18px", width: "18px", color: "#383838" }}
                 />{" "}
