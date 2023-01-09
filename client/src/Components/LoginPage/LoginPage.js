@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useEffect} from "react";
 import classes from "./LoginPage.module.css";
 import Navigation from "../LandingPage/Navigation/Navigation";
 import Footer from "../LandingPage/Footer/Footer";
@@ -6,12 +6,20 @@ import { Link, useNavigate } from "react-router-dom";
 import { auth, googleAuthProvider } from "../../firebase";
 import { useDispatch } from "react-redux";
 import { toast, ToastContainer } from "react-toastify";
+import { useSelector } from "react-redux"
 import GoogleIcon from "@mui/icons-material/Google";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 
 const LoginPage = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
+
+  const { user } = useSelector((state) => ({ ...state }));
+
+  //Redirecting user if it has already logged in and trying to go to /login
+  useEffect(() => {
+    if (user && user.token) navigate("/");
+  }, [user]);
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

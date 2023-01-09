@@ -1,20 +1,29 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Footer from "../LandingPage/Footer/Footer";
 import Navigation from "../LandingPage/Navigation/Navigation";
 import classes from "./Register.module.css";
 import { auth } from "../../firebase";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { Outlet } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
   const [email, setEmail] = useState("");
+
+  const { user } = useSelector((state) => ({ ...state }));
+  const navigate = useNavigate();
+
+  //Redirecting user if it has already logged in and trying to go to /register
+  useEffect(() => {
+    if (user && user.token) navigate("/");
+  }, [user]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     //Passing state in email
-    
+
     const actionCodeSettings = {
       url: process.env.REACT_APP_REGISTER_URL,
       handleCodeInApp: true,
